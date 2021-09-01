@@ -43,9 +43,7 @@ this can be used for the FAQ-accordion. read more here: https://www.w3schools.co
   padding-right: 2.5em;
   margin-top: 5em;
   display: flex;
-  /* justify-items: center; */
   justify-content: space-around;
-  /* flex-direction: row; */
 }
 
 .col {
@@ -73,8 +71,8 @@ this can be used for the FAQ-accordion. read more here: https://www.w3schools.co
 }
 
 .form {
-  padding-right: 2em;
-  padding-left: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
   text-align: center;
 }
 
