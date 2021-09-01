@@ -1,18 +1,16 @@
 /* the + sign is used to select the sibling that comes immediately next to the element you selected.
 in this case it is the div with the answer class next to the div with the active class.
 this can be used for the FAQ-accordion. read more here: https://www.w3schools.com/css/css_combinators.asp */
-
-body {
+* {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.active + .answer {
-  /* some styling here */
-}
-
-video {
+.hero-video {
   width: 100%;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .overlay-text {
@@ -34,64 +32,94 @@ video {
 
 .top-text-b {
   font-size: 3vw;
-  margin-left: 20px;
 }
 
-.forms {
+.content {
+  margin-top: 2em;
+}
+
+.row {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  margin-top: 5em;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  /* justify-items: center; */
+  justify-content: space-around;
+  /* flex-direction: row; */
 }
 
-.sign-up {
-  color: rgb(41, 14, 66);
+.col {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.card {
+  min-height: 500px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(120, 9, 121, 1) 100%
+  );
+  padding: 2em;
+  border-radius: 10px;
+  margin: 2em;
+}
+
+.subheader {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 
 .form {
-  background-color: rgb(134, 83, 201);
-  display: inline-block;
+  padding-right: 2em;
+  padding-left: 2em;
   text-align: center;
-  width: 400px;
-  margin-top: 10px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 36px;
   padding: 10px;
+  border-radius: 5px;
 }
 
-label,
-button {
-  display: block;
-  margin: 10px 0;
-  color: rgb(39, 10, 66);
-}
-
-.radio-buttons,
-.check-boxes {
+.radio-buttons {
+  padding: 2em;
   display: flex;
-  align-items: baseline;
+  justify-content: space-between;
+}
+
+.check-boxes {
+  padding: 3em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .button {
+  text-transform: uppercase;
+  color: white;
+  min-width: 200px;
+  min-height: 64px;
   border: none;
+  border-radius: 5px;
   display: inline-block;
   padding: 5px 10px;
   background-color: rgb(191, 125, 245);
 }
 
-.accordion-container {
-  display: flex;
-  justify-content: center;
-}
-
-.accordion {
-  background-color: rgb(134, 83, 201);
-  margin: 20px;
-  width: 400px;
-  padding: 10px;
-}
-
 footer {
   background-color: rgb(134, 83, 201);
   width: 100%;
-  padding: 10px;
+  height: 70px;
   text-align: center;
+}
+
+.project-name {
+  padding-top: 10px;
 }

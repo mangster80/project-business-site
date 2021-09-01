@@ -4,15 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 3: The Business Site</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- dont forget to add a css file and link it here! -->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- video or image as a header is cool :) -->
     <header>
       <video class="hero-video" autoplay loop muted playsinline>
-        <source src="./videos/pexels-ivan-khmelyuk-8642288-1080p.mp4" type="video/mp4">
+        <source
+          src="./videos/pexels-ivan-khmelyuk-8642288-1080p.mp4"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
       <div class="overlay-text">
@@ -21,76 +22,142 @@
       </div>
     </header>
 
-    <!-- Signup form -->
-    <section class="forms">
-      
-      <form class="form" id="form">  
+    <section class="content">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <form class="form" id="form">
+              <h2 class="subheader">Sign up today!</h2>
 
-        <h2 class="sign-up">Sign up today!</h2>
-        <label for="name">Your name:</label>
-          <input type="text" required id="name" placeholder="Write your name here"/> <!-- required= needs to be filled -->
-        <label for="email">Your email:</label>
-          <input type="email" id="email" placeholder="Your E-mail here"/>
-        <label for="password">Password:</label>
-          <input type="password" id="password" placeholder="Your password"/> 
+              <div class="form-control">
+                <label for="name">Your name:</label>
+                <input
+                  type="text"
+                  required
+                  id="name"
+                  placeholder="Write your name here"
+                />
+              </div>
 
-        <h3 class="radio-question"> Select one</h2>
-        <div class="radio-buttons">
-          <input type="radio" class="radio" id="male" name="gender" value="MALE">
-            <label for="male">Male</label><br>
-          <input type="radio" class="radio" id="female" name="gender" value="FEMALE">
-            <label for="female">Female</label><br>
-          <input type="radio" class="radio" id="other" name="gender" value="OTHER">
-            <label for="other">Other</label>
-        </div>
+              <div class="form-control">
+                <label for="email">Your email:</label>
+                <input type="email" id="email" placeholder="Your E-mail here" />
+              </div>
 
-        <h3 class="check-question">Select more than one</h2>
-        <div class="check-boxes">
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label>
-          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label>
-        </div>
-          
-        <button class="button" type="submit">Submit form</button>
+              <div class="form-control">
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Your password"
+                />
+              </div>
 
-     </form>
-    </section>
+              <h3 class="subheader">Select one</h3>
 
+              <div class="radio-buttons">
+                <div class="form-control">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="male"
+                    name="gender"
+                    value="MALE"
+                  />
+                  <label for="male">Male</label><br />
+                </div>
+                <div class="form-control">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="female"
+                    name="gender"
+                    value="FEMALE"
+                  />
+                  <label for="female">Female</label><br />
+                </div>
+                <div class="form-control">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="other"
+                    name="gender"
+                    value="OTHER"
+                  />
+                  <label for="other">Other</label>
+                </div>
+              </div>
 
-    
-      <!-- Accordion -->
-    <section class="accordion-container">
+              <h3 class="check-box-header">Select more than one</h3>
 
-      <div class="accordion">
-        <h2 class="faq">FAQ</h2>
+              <div class="check-boxes">
+                <div class="form-control">
+                  <input
+                    type="checkbox"
+                    id="vehicle1"
+                    name="vehicle1"
+                    value="Bike"
+                  />
+                  <label for="vehicle1"> I have a bike</label>
+                </div>
+                <div class="form-control">
+                  <input
+                    type="checkbox"
+                    id="vehicle2"
+                    name="vehicle2"
+                    value="Car"
+                  />
+                  <label for="vehicle2"> I have a car</label>
+                </div>
+                <div class="form-control">
+                  <input
+                    type="checkbox"
+                    id="vehicle3"
+                    name="vehicle3"
+                    value="Boat"
+                  />
+                  <label for="vehicle3"> I have a boat</label>
+                </div>
+              </div>
 
-        <div class="question" id="section1">Section 1
-          <div class="answer">
-            <p>Lorem ipsum...</p>
+              <button class="button" type="submit">Submit form</button>
+            </form>
           </div>
         </div>
-
-        <div class="question" id="section2">Section 2</div>
-          <div class="answer">
-            <p>Lorem ipsum...</p>
+        <div class="col">
+          <div class="card">
+            <div class="col">
+              <div class="tabs">
+                <div class="tab">
+                  <input class="check" type="checkbox" id="chck1" />
+                  <label class="tab-label" for="chck1">Item 1</label>
+                  <div class="tab-content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ipsum, reiciendis!
+                  </div>
+                </div>
+                <div class="tab">
+                  <input class="check" type="checkbox" id="chck2" />
+                  <label class="tab-label" for="chck2">Item 2</label>
+                  <div class="tab-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    in!
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-
     </section>
-    
 
-    <!-- dont forget to link the javascript file here! -->
     <script src="script.js"></script>
-
   </body>
 
   <footer>
-    <div>Project for Technigo</div>
-    <div>By Daniel Vestin</div>
+    <div class="project-name">
+      <p>Project for Technigo</p>
+    </div>
+    <div><p>By Daniel Vestin</p></div>
   </footer>
 </html>
